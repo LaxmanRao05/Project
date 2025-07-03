@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="Ajio.css">
+    <style>
+        body{
+            background-size: 1000px;
+            text-align: center;
+            margin: 20px;
+
+        }
+        .field{
+         padding: 10px;
+         margin: 10px;
+         border-radius :0;
+         height: 300px;
+         width: 600px;
+         align-items: center;
+         border-color:red;
+        }
+        
+    </style>
+</head>
+<body>
+    
+          <p class="lb"  ><button onclick="history.back()">go back</button></p>
+    <fieldset class="field">
+        <div class="div">
+            <h1>USER PERSONAL DETAILS</h1>
+            <label for="name"> Enter your Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br><br>
+            <label for ="email">Enter your Email  id</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+            <label for="password">ENTER U R PASSWORD</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+            <label for="confirm-password">CONFIRM U R PASSWORD</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            <br><br>
+            <label for="pho no">Enter Your Phoneno</label>
+            <input type="tel" id="phoneno" pattern="[0-9]{10}" name="phoneno" placeholder="Enter your phone number" required>
+            <br><br>
+
+
+             <input type="submit" value="Submit">
+             </div>
+        </fieldset>
+</body>
+</html>
