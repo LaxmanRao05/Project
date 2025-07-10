@@ -1,0 +1,36 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #fcfcfcf5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+   #board{
+      display:grid;
+      grid-template-columns:repeat(3,100px);
+      grid-auto-rows:100px;
+      gap:5px;
+      justify-content:center;
+      margin:30px auto;
+    }
+    /* One square */
+    .cell{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:2.5rem;
+      border:2px solid #000000;
+      background:#bd8585;
+      cursor:pointer;
+      user-select:none;
+    }
+    /* Small extras */
+    body{font-family:Arial,Helvetica,sans-serif;text-align:center}
+    #status{font-size:1.4rem;margin-top:10px}
+    #resetBtn{margin-top:40px;padding:10px 25px;font-size:1rem;cursor:pointer}
